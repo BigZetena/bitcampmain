@@ -2,9 +2,9 @@
 
 // import { useSession, signOut } from "next-auth/react";
 import Link from 'next/link';
-import { usePathname, useSearchParams } from 'next/navigation';
+// import { usePathname, useSearchParams } from 'next/navigation';
 import Image from 'next/image';
-import { activeLink } from '@/services/activeRoute';
+// import { activeLink } from '@/services/activeRoute';
 
 type NavLink = {
   label: string;
@@ -15,9 +15,9 @@ type Props = {
 };
 
 export const Navigation = ({ navLinks }: Props) => {
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
-  const callbackUrl = searchParams.get('callbackUrl') || '/';
+  // const pathname = usePathname();
+  // const searchParams = useSearchParams();
+  // const callbackUrl = searchParams.get('callbackUrl') || '/';
   return (
     <>
       <nav className="container max-w-container mx-auto flex items-center justify-between px-4">
@@ -28,7 +28,8 @@ export const Navigation = ({ navLinks }: Props) => {
         <ul className="space-x-6 hidden md:flex">
           {/* <Image src={logo} alt={"logo"} className="w-16 h-16 bg-white/50 "  /> */}
           {navLinks.map((link) => {
-            const isActive = activeLink(link.href, pathname, callbackUrl);
+            const isActive = false;
+            // activeLink(link.href, pathname, callbackUrl);
             return (
               <li key={link.label} className="flex items-center">
                 <Link
