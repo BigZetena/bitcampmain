@@ -28,7 +28,7 @@ export const Navigation = ({ navLinks }: Props) => {
         <ul className="space-x-6 hidden md:flex">
           {/* <Image src={logo} alt={"logo"} className="w-16 h-16 bg-white/50 "  /> */}
           {navLinks.map((link) => {
-            const isActive = false;
+            const isActive = true;
             // activeLink(link.href, pathname, callbackUrl);
             return (
               <li key={link.label} className="flex items-center">
