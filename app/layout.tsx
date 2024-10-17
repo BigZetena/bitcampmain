@@ -3,6 +3,7 @@ import localFont from 'next/font/local';
 import './globals.css';
 import { Header } from '@/react/sections/Header';
 import { Raleway, Manrope } from '@next/font/google';
+import { Footer } from '@/react/units/footer/ui/footer.component';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -42,6 +43,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   );

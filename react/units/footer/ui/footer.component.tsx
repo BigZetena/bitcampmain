@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 export const Footer = () => {
@@ -13,7 +14,23 @@ export const Footer = () => {
         <p>
           196084, г. Санкт-Петербург, ул. Парфеновская д.12, БЦ “АКВИЛОН LINKS”
         </p>
-        <p>Политика конфиденциальности</p>
+        <a href="" className="">
+          info@bit-camp.ru
+        </a>
+        <div className="flex justify-between font-manrope">
+          {' '}
+          <a href="tel:+79811550991" className="">
+            <strong>Телефон:</strong> +7 981 155 09 91
+          </a>
+          <p>
+            <strong>ИНН:</strong> 7838121334
+          </p>
+          <p>
+            <strong>ОГРН:</strong> 1247800024592
+          </p>
+        </div>
+
+        <Link href={'/policy'}>Политика конфиденциальности</Link>
       </div>
     </div>
   );

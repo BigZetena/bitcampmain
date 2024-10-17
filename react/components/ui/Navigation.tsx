@@ -21,10 +21,12 @@ export const Navigation = ({ navLinks }: Props) => {
   return (
     <>
       <nav className="container max-w-container mx-auto flex items-center justify-between px-4">
-        <div className="flex items-center space-x-2">
-          <Image src="/images/logo.png" alt="logo" width={21} height={16} />
-          <span className="text-2xl font-bold text-[#FDFDFD]">БИТКЭМП</span>
-        </div>
+        <Link href={'/'}>
+          <div className="flex items-center space-x-2">
+            <Image src="/images/logo.png" alt="logo" width={21} height={16} />
+            <span className="text-2xl font-bold text-[#FDFDFD]">БИТКЭМП</span>
+          </div>{' '}
+        </Link>
         <ul className="space-x-6 hidden md:flex">
           {/* <Image src={logo} alt={"logo"} className="w-16 h-16 bg-white/50 "  /> */}
           {navLinks.map((link) => {
