@@ -15,7 +15,7 @@ const description = (
 );
 export const StudyWithUs = () => {
   return (
-    <div className="container max-w-container font-raleway mx-auto py-10">
+    <div className="container max-w-container font-raleway mx-auto py-10 ">
       <TitleLineCard title={title} description={description} />
       <StudyWithUsList />
     </div>

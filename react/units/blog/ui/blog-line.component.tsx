@@ -43,12 +43,12 @@ const cards: {
 
 export const BlogLine = () => {
   return (
-    <div className="container max-w-container mx-auto py-10 font-raleway">
+    <div className="container max-w-container py-10 font-raleway">
       <div>
         <SubTitle>Блог</SubTitle>
       </div>
-      <div className="h-[2px] bg-primary  w-full my-5"></div>
-      <div className="flex justify-between">
+      <div className="h-[2px] bg-primary w-full my-5"></div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {cards.map((e, i) => (
           <BlogLineCard
             key={i}

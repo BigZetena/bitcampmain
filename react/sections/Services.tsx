@@ -88,18 +88,17 @@ const categoriesData: CategoryData[] = [
     ],
   },
 ];
-
 export const Services: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<number | null>(1);
   const [isVisible, setIsVisible] = useState<boolean>(true);
 
   const handleCategoryClick = (id: number) => {
     if (selectedCategory !== id) {
-      setIsVisible(false); // Начинаем анимацию скрытия
+      setIsVisible(false);
       setTimeout(() => {
-        setSelectedCategory(id); // Меняем категорию после завершения анимации скрытия
-        setIsVisible(true); // Показываем новый контент с анимацией появления
-      }, 200); // Длительность анимации скрытия (должна совпадать с CSS)
+        setSelectedCategory(id);
+        setIsVisible(true);
+      }, 200);
     }
   };
   const activeCategory = categoriesData.find(
@@ -107,9 +106,9 @@ export const Services: React.FC = () => {
   );
 
   return (
-    <div className="container  max-w-container mx-auto py-10 font-raleway">
-      <div className="flex justify-between">
-        <div className="shrink-0 w-[213px] ">
+    <div className="container max-w-container py-10 font-raleway">
+      <div className="flex flex-col md:flex-row justify-between gap-8">
+        <div className="w-full md:w-[213px] md:shrink-0">
           <SubTitle>Услуги</SubTitle>
           <div className="mt-10">
             {categoriesData.map((category) => (
@@ -122,7 +121,7 @@ export const Services: React.FC = () => {
             ))}
           </div>
         </div>
-        <div className={`mt-10 `}>
+        <div className="mt-10  md:mt-0">
           {activeCategory && (
             <ServicesList
               isVisible={isVisible}

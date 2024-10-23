@@ -22,7 +22,7 @@ const description = (
 
 export const Sciense = () => {
   return (
-    <div className="container max-w-container py-10 mx-auto">
+    <div className=" max-w-container py-10 mx-auto">
       <TitleLineCard title={title} description={description} /> <ScienseCards />
     </div>
   );

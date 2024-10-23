@@ -9,7 +9,9 @@ export const SubTitle = ({
 }) => {
   return (
     <h3
-      className={`text-primary text-4xl font-manrope ${right && 'text-right'}`}
+      className={`text-primary md:text-4xl text-3xl font-manrope ${
+        right ? 'text-right' : 'text-left'
+      }`}
     >
       {children}
     </h3>

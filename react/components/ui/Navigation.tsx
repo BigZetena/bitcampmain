@@ -1,10 +1,8 @@
 'use client';
 
-// import { useSession, signOut } from "next-auth/react";
+import { useState } from 'react';
 import Link from 'next/link';
-// import { usePathname, useSearchParams } from 'next/navigation';
 import Image from 'next/image';
-// import { activeLink } from '@/services/activeRoute';
 
 type NavLink = {
   label: string;
@@ -15,9 +13,8 @@ type Props = {
 };
 
 export const Navigation = ({ navLinks }: Props) => {
-  // const pathname = usePathname();
-  // const searchParams = useSearchParams();
-  // const callbackUrl = searchParams.get('callbackUrl') || '/';
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <nav className="container max-w-container mx-auto flex items-center justify-between px-4">
@@ -25,30 +22,54 @@ export const Navigation = ({ navLinks }: Props) => {
           <div className="flex items-center space-x-2">
             <Image src="/images/logo.png" alt="logo" width={21} height={16} />
             <span className="text-2xl font-bold text-[#FDFDFD]">БИТКЭМП</span>
-          </div>{' '}
+          </div>
         </Link>
+        {/* Бургер-меню для мобильных устройств */}
+        <button className="block md:hidden" onClick={() => setIsOpen(!isOpen)}>
+          {/* Иконка бургера */}
+          <svg
+            className="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+        {/* Навигационные ссылки для десктопа */}
         <ul className="space-x-6 hidden md:flex">
-          {/* <Image src={logo} alt={"logo"} className="w-16 h-16 bg-white/50 "  /> */}
-          {navLinks.map((link) => {
-            const isActive = true;
-            // activeLink(link.href, pathname, callbackUrl);
-            return (
-              <li key={link.label} className="flex items-center">
+          {navLinks.map((link) => (
+            <li key={link.label} className="flex items-center">
+              <Link
+                href={link.href}
+                className="relative text-[#FDFDFD] font-raleway text-[15px] font-bold leading-[17.61px] tracking-[-0.02em] text-center transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-[#FDFDFD] after:transition-all after:duration-300 hover:after:w-full"
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      {/* Мобильное меню */}
+      {isOpen && (
+        <div className="md:hidden">
+          <ul className="flex flex-col space-y-4 px-4 mt-4">
+            {navLinks.map((link) => (
+              <li key={link.label}>
                 <Link
                   href={link.href}
-                  className={
-                    isActive
-                      ? "relative text-[#FDFDFD] font-raleway text-[15px] font-bold leading-[17.61px] tracking-[-0.02em] text-center transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-[#FDFDFD] after:transition-all after:duration-300 hover:after:w-full"
-                      : "relative text-[#FDFDFD] font-raleway text-[15px] font-bold leading-[17.61px] tracking-[-0.02em] text-center transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:bg-[#FDFDFD] after:transition-all after:duration-300 after:w-full"
-                  }
+                  className="block text-[#FDFDFD] font-raleway text-[15px] font-bold leading-[17.61px] tracking-[-0.02em]"
+                  onClick={() => setIsOpen(false)}
                 >
                   {link.label}
                 </Link>
               </li>
-            );
-          })}
-        </ul>
-      </nav>
+            ))}
+          </ul>
+        </div>
+      )}
     </>
   );
 };

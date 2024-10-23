@@ -21,8 +21,12 @@ const config: Config = {
         manrope: ['var(--font-manrope)', 'sans-serif'],
       },
       maxWidth: {
-        container: '1170px', // Добавляем кастомный размер
+        container: '75rem', // Добавляем кастомный размер
       },
+    },
+    container: {
+      center: true,
+      padding: '1rem', // Добавляем отступы по бокам (px-4)
     },
   },
   plugins: [],

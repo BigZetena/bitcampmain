@@ -11,7 +11,7 @@ export const TitleLineCard = ({
   description: React.ReactNode | string;
 }) => {
   return (
-    <div className="flex justify-between container max-w-container mx-auto py-10">
+    <div className="flex justify-between container max-w-container mx-auto py-10 flex-col md:flex-row gap-10">
       <div className="flex flex-col justify-between min-w-max">
         <SubTitle>{title}</SubTitle>
       </div>

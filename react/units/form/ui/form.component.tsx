@@ -59,9 +59,9 @@ export const Form = () => {
   };
 
   return (
-    <div className="flex justify-between py-10 color-primary container max-w-container mx-auto font-raleway">
-      <div className="w-1/2">
-        <h2 className="text-5xl font-bold">
+    <div className="flex justify-between py-10 color-primary container max-w-container mx-auto font-raleway md:flex-row flex-col gap-5">
+      <div className="md:w-1/2">
+        <h2 className="text-3xl  md:text-5xl font-bold">
           Оптимизируем ваш
           <br /> бизнес
         </h2>
@@ -71,7 +71,7 @@ export const Form = () => {
           коммерческое предложение
         </p>
       </div>
-      <div className="w-1/2 relative">
+      <div className="md:w-1/2 relative">
         {/* Если идет загрузка, показываем спиннер */}
         {isLoading && (
           <div className="absolute inset-0 flex items-center justify-center z-10 w-full">
@@ -105,7 +105,7 @@ export const Form = () => {
               <PatternFormat
                 label="Номер телефона*"
                 {...field}
-                format="+7 (###) #### ###"
+                format="+7 (###) ### ####"
                 allowEmptyFormatting
                 mask="_"
                 className={`font-manrope w-full border-b focus:border-primary transition-colors duration-200 ease-in-out focus:outline-none sm:text-sm ${

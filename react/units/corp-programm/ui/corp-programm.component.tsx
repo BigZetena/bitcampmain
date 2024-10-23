@@ -28,15 +28,15 @@ const programsData: Service[] = [
 
 export const CorpProgramm = () => {
   return (
-    <div className="flex justify-between container max-w-container mx-auto py-10">
-      <div className="min-w-max">
+    <div className="container max-w-container py-10 flex flex-col justify-between md:flex-row font-raleway">
+      <div className="w-full md:w-1/3 mb-6 md:mb-0">
         <SubTitle>
           Корпоративные
           <br />
           программы
         </SubTitle>
       </div>
-      <div className="max-w-[689px]">
+      <div className="w-full md:w-max">
         <ServicesList servicesData={programsData} />
       </div>
     </div>

@@ -75,9 +75,9 @@ const cardsData = [
 
 export const StudyWithUsList: React.FC = () => {
   return (
-    <div className="flex flex-wrap gap-2 mt-20">
+    <div className="flex flex-wrap gap-2 mt-20 justify-center">
       {/* Пустое место для смещения */}
-      <div className="w-[286px] h-[176px]"></div>
+      <div className="hidden xl:block  w-[286px] h-[176px]"></div>
       {/* Карточки */}
       {cardsData.map((card, index) => (
         <StudyWithUsCard
@@ -88,7 +88,7 @@ export const StudyWithUsList: React.FC = () => {
         />
       ))}
       {/* Пустое место для последней ячейки */}
-      <div className="w-[286px] h-[176px]"></div>
+      <div className="hidden xl:block  w-[286px] h-[176px]"></div>
     </div>
   );
 };

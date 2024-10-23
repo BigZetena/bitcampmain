@@ -14,16 +14,16 @@ export const BlogLineCard = ({
   tag: string;
   imageUrl: string;
 }) => {
-  return (
-    <div className="flex flex-col gap-4 max-w-[270px]">
-      <div className=" bg-background">
-        <img src={imageUrl} alt="blog-image" className="h-auto w-[270px] " />
-      </div>
-      <p className="font-manrope font-medium">[{date}]</p>
-      <p className="font-medium">{title}</p>
-      <div className="max-w-max">
-        <StackDesk>{tag}</StackDesk>
-      </div>
-    </div>
-  );
+   return (
+     <div className="flex flex-col gap-4">
+       <div className="bg-background">
+         <img src={imageUrl} alt={title} className="h-auto w-full" />
+       </div>
+       <p className="font-manrope font-medium text-sm md:text-base">[{date}]</p>
+       <p className="font-medium text-base md:text-lg line-clamp-2">{title}</p>
+       <div className="max-w-max">
+         <StackDesk>{tag}</StackDesk>
+       </div>
+     </div>
+   );
 };

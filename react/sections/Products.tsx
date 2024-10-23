@@ -30,14 +30,14 @@ const cardsData = [
 export const Products = () => {
   return (
     <div>
-      <div className="conainer max-w-container mx-auto py-14">
+      <div className="container max-w-container py-14">
         <SubTitle right={true}>
           Мы помогаем компаниям разрабатывать новые <br /> цифровые продукты, а
           также оптимизировать существующие сервисы, ориентированные на
           потребности различных отраслей.
         </SubTitle>
 
-        <div className="flex flex-wrap justify-between mt-16">
+        <div className="flex flex-col md:flex-row flex-wrap justify-center mt-16 gap-8">
           {cardsData.map((card, index) => (
             <Card
               key={index}

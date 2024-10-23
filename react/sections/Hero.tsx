@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Hero = () => {
   return (
-    <div className="bg-[#1B1B1B] h-screen text-[#FDFDFD} font-raleway py-16 text-[#FDFDFD] relative">
+    <div className="bg-[#1B1B1B] h-screen text-[#FDFDFD} font-raleway py-16 text-[#FDFDFD] relative overflow-hidden">
       <div className="container max-w-container mx-auto flex flex-col justify-end h-full ">
         <div className="absolute left-0 top-[20vh]">
           <svg
@@ -88,12 +88,11 @@ export const Hero = () => {
             </defs>
           </svg>
         </div>
-
-        <div className="flex justify-between items-end">
-          <h2 className="text-6xl">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end">
+          <h2 className="text-4xl md:text-6xl">
             IT-разработка <br /> и кадровые решения
           </h2>
-          <p className="text-xl text-[#E4E4E4] text-right max-w-96">
+          <p className="text-base md:text-xl text-[#E4E4E4] text-left md:text-right max-w-full md:max-w-md mt-4 md:mt-0">
             Развитие бизнеса через
             <br />
             цифровизацию и интеграцию
