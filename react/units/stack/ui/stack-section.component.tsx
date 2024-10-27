@@ -70,7 +70,7 @@ const stackSections: StackSectionType[] = [
 
 export const StackSection = () => {
   return (
-    <div className=" max-w-[640px]">
+    <div className="relative max-w-[640px]">
       {stackSections.map((section) => (
         <StackCard
           key={section.id}
@@ -79,6 +79,7 @@ export const StackSection = () => {
           categories={section.categories}
         />
       ))}
+      <div className="md:hidden absolute bottom-0 left-0 right-0 h-[2px] bg-primary w-full"></div>
     </div>
   );
 };

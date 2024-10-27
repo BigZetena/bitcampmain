@@ -36,7 +36,7 @@ export const CorpProgramm = () => {
           программы
         </SubTitle>
       </div>
-      <div className="w-full md:w-max">
+      <div className="w-full md:w-max font-raleway">
         <ServicesList servicesData={programsData} />
       </div>
     </div>

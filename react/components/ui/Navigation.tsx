@@ -19,9 +19,11 @@ export const Navigation = ({ navLinks }: Props) => {
     <>
       <nav className="container max-w-container mx-auto flex items-center justify-between px-4">
         <Link href={'/'}>
-          <div className="flex items-center space-x-2">
-            <Image src="/images/logo.png" alt="logo" width={21} height={16} />
-            <span className="text-2xl font-bold text-[#FDFDFD]">БИТКЭМП</span>
+          <div className="flex items-center space-x-6">
+            <Image src="/images/logo.svg" alt="logo" width={30} height={20} />
+            <span className="text-2xl  font-jetBrains font-bold text-[#FDFDFD]">
+              БИТКЭМП
+            </span>
           </div>
         </Link>
         {/* Бургер-меню для мобильных устройств */}

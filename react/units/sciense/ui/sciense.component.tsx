@@ -4,25 +4,21 @@ import { ScienseCards } from './sciense-cards.component';
 
 const title = (
   <>
-    Прикладные <br /> исследования
+    Технологические <br /> направления
   </>
 );
 
 const description = (
   <>
-    Мы предоставляем полный спектр услуг по проведению
-    <br />
-    прикладных исследований и разработке новых
-    <br />
-    технологий, включая консалтинг, разработку,
-    <br />
-    тестирование, внедрение и поддержку.
+    Мы предоставляем полный спектр услуг по проведению прикладных исследований и
+    разработке новых технологий, включая консалтинг, разработку, тестирование,
+    внедрение и поддержку.
   </>
 );
 
 export const Sciense = () => {
   return (
-    <div className=" max-w-container py-10 mx-auto">
+    <div className=" max-w-container md:py-10 mx-auto">
       <TitleLineCard title={title} description={description} /> <ScienseCards />
     </div>
   );

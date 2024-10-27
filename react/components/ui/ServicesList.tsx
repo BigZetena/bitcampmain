@@ -13,21 +13,21 @@ export const ServicesList: React.FC<{
           {servicesData.slice(0, 2).map((service, index) => (
             <div key={index} className="relative py-4 md:min-h-[205px]">
               <div
-                className={`absolute top-0 left-0 right-0 h-[2px] mt-4 transition-all duration-200 ease-in-out ${
+                className={`absolute top-0 left-0 right-0 h-[2px] mt-4 transition-all duration-200 ease-in-out  ${
                   isVisible ? 'w-full' : 'w-1/3'
                 }`}
                 style={{
-                  backgroundColor: color || '#000',
+                  backgroundColor: color || 'var(--primary)',
                 }}
               ></div>
               <div
-                className={`flex flex-col justify-between transition-opacity duration-300 ease-in-out ${
+                className={`flex flex-col justify-between transition-opacity duration-300 ease-in-out  ${
                   isVisible ? 'opacity-100' : 'opacity-0'
                 }`}
               >
                 <h3
-                  className={`text-lg md:text-xl font-light mb-5 mt-4`}
-                  style={{ color: color || '#000' }}
+                  className={`text-lg md:text-xl font-medium mb-5 mt-4`}
+                  style={{ color: color || 'var(--primary)' }}
                 >
                   {service.title}
                 </h3>
@@ -45,7 +45,7 @@ export const ServicesList: React.FC<{
                   isVisible ? 'w-full' : 'w-1/3'
                 }`}
                 style={{
-                  backgroundColor: color || '#000',
+                  backgroundColor: color || 'var(--primary)',
                 }}
               ></div>
               <div
@@ -54,8 +54,8 @@ export const ServicesList: React.FC<{
                 }`}
               >
                 <h3
-                  className={`text-lg md:text-xl font-light mb-5 mt-4`}
-                  style={{ color: color || '#000' }}
+                  className={`text-lg md:text-xl font-medium mb-5 mt-4`}
+                  style={{ color: color || 'var(--primary)' }}
                 >
                   {service.title}
                 </h3>

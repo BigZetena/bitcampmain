@@ -3,21 +3,23 @@
 @tailwind utilities;
 @layer base {
   :root {
-    --background: #ffffff;
+    --background: #fffef9;
     --foreground: #171717;
     --primary: #1b1b1b;
     --secondary: #d6d6d6;
     --light: #7c7c7c;
     --centerLight: #e4e4e4;
+    --darkCard: #e4e4e4;
   }
 
   .dark {
-    --background: #0a0a0a;
+    --background: #272727;
     --foreground: #ededed;
     --primary: #d6d6d6;
     --secondary: #1b1b1b;
     --light: #d6d6d6;
     --centerLight: #858585;
+    --darkCard: #1b1b1b;
   }
 }
 body {

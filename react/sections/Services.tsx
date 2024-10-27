@@ -9,7 +9,7 @@ const categoriesData: CategoryData[] = [
   {
     id: 1,
     title: 'Бизнес решения',
-    color: '#8762DC',
+    color: '#6d6296',
     services: [
       {
         title: 'Платежные системы',
@@ -63,7 +63,7 @@ const categoriesData: CategoryData[] = [
   {
     id: 3,
     title: 'Машинное обучение',
-    color: '#77A6F7',
+    color: '#4b689c',
     services: [
       {
         title: 'Машинное обучение и нейронные сети',
@@ -107,7 +107,7 @@ export const Services: React.FC = () => {
 
   return (
     <div className="container max-w-container py-10 font-raleway">
-      <div className="flex flex-col md:flex-row justify-between gap-8">
+      <div className="flex flex-col md:flex-row justify-between gap-2 md:gap-8">
         <div className="w-full md:w-[213px] md:shrink-0">
           <SubTitle>Услуги</SubTitle>
           <div className="mt-10">
@@ -121,7 +121,7 @@ export const Services: React.FC = () => {
             ))}
           </div>
         </div>
-        <div className="mt-10  md:mt-0">
+        <div className="mt-4  md:mt-0">
           {activeCategory && (
             <ServicesList
               isVisible={isVisible}

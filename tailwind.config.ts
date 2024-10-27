@@ -15,10 +15,12 @@ const config: Config = {
         secondary: 'var(--secondary)',
         light: 'var(--light)',
         centerLight: 'var(--centerLight)',
+        darkCard: 'var(--darkCard)',
       },
       fontFamily: {
         raleway: ['var(--font-raleway)', 'sans-serif'],
         manrope: ['var(--font-manrope)', 'sans-serif'],
+        jetBrains: ['var(--font-jet-brains)', 'sans-serif'],
       },
       maxWidth: {
         container: '75rem', // Добавляем кастомный размер

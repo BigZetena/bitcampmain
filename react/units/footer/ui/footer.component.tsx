@@ -10,12 +10,12 @@ export const Footer = () => {
         </div>
         <p className="text-2xl mt-4">© БИТКЭМП, 2024</p>
       </div>
-      <div className="text-left md:text-right flex flex-col justify-between items-start md:items-end">
+      <div className="text-left md:text-right flex flex-col justify-between gap-2 items-start md:items-end">
         <p>
           196084, г. Санкт-Петербург, ул. Парфеновская д.12, БЦ “АКВИЛОН LINKS”
         </p>
         <a href="mailto:info@bit-camp.ru">info@bit-camp.ru</a>
-        <div className="flex flex-col md:flex-row justify-start md:justify-between font-manrope w-full md:w-auto mt-4 md:mt-0">
+        <div className="flex flex-col md:flex-row justify-start md:justify-between font-manrope w-full  md:w-auto mt-4 md:mt-0">
           <a href="tel:+79811550991">
             <strong>Телефон:</strong> +7 981 155 09 91
           </a>

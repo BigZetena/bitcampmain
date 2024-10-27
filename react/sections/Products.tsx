@@ -31,12 +31,20 @@ export const Products = () => {
   return (
     <div>
       <div className="container max-w-container py-14">
-        <SubTitle right={true}>
-          Мы помогаем компаниям разрабатывать новые <br /> цифровые продукты, а
-          также оптимизировать существующие сервисы, ориентированные на
-          потребности различных отраслей.
-        </SubTitle>
-
+        <div className="hidden md:block">
+          <SubTitle right={true}>
+            Мы помогаем компаниям разрабатывать новые <br /> цифровые продукты,
+            а также оптимизировать существующие сервисы, ориентированные на
+            потребности различных отраслей.
+          </SubTitle>
+        </div>
+        <div className="md:hidden">
+          <SubTitle>
+            Мы помогаем компаниям разрабатывать новые цифровые продукты, а также
+            оптимизировать существующие сервисы, ориентированные на потребности
+            различных отраслей.
+          </SubTitle>
+        </div>
         <div className="flex flex-col md:flex-row flex-wrap justify-center mt-16 gap-8">
           {cardsData.map((card, index) => (
             <Card

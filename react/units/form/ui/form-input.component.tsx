@@ -10,11 +10,11 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 export const FormInput = React.forwardRef<HTMLInputElement, InputProps>(
   ({ label, error, ...props }, ref: ForwardedRef<HTMLInputElement>) => (
     <div>
-      <label className="block text-sm font-medium text-gray-700">{label}</label>
+      <label className="block text-sm font-medium text-primary">{label}</label>
       <input
         ref={ref} // Теперь мы можем передавать ref в input
         {...props}
-        className={`font-manrope mt-1 block w-full border-b focus:border-primary transition-colors duration-200 ease-in-out focus:outline-none sm:text-sm ${
+        className={`text-primary bg-background font-manrope mt-1 block w-full border-b focus:border-primary transition-colors duration-200 ease-in-out focus:outline-none sm:text-sm ${
           error ? 'border-red-500' : ''
         }`}
       />

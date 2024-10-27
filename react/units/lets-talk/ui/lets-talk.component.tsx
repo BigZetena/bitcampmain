@@ -23,6 +23,7 @@ export const LetsTalk = () => {
       description={description}
       image="/images/lets-talk/project.png"
       buttonText="ОБСУДИТЬ ПРОЕКТ"
+      link="#form"
     />
   );
 };

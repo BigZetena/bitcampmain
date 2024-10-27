@@ -1,4 +1,5 @@
 import { Navigation } from '../components/ui/Navigation';
+import { ThemeButton } from '../shared/ui/ThemeButton';
 // import { ThemeButton } from "./ThemeButton";
 
 const navItems = [
@@ -14,6 +15,7 @@ export const Header = () => {
     <header className="py-4 pt-14 absolute w-full z-10">
       <div>
         <Navigation navLinks={navItems} />
+        <ThemeButton />
       </div>
     </header>
   );

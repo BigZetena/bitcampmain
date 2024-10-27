@@ -9,7 +9,7 @@ export const ServiceCard: React.FC<{
   return (
     <button
       onClick={onClick}
-      className={`w-full p-2 m-2 rounded-md transition-colors duration-300 text-sm md:text-base ${
+      className={`w-full p-2 my-2 md:m-2 rounded-md transition-colors duration-300 text-sm md:text-base ${
         isActive
           ? 'bg-purple-600 text-white'
           : 'bg-gray-200 text-black hover:bg-gray-300'

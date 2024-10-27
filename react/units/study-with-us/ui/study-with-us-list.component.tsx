@@ -75,7 +75,7 @@ const cardsData = [
 
 export const StudyWithUsList: React.FC = () => {
   return (
-    <div className="flex flex-wrap gap-2 mt-20 justify-center">
+    <div className="flex flex-wrap gap-2 md:mt-20 justify-center">
       {/* Пустое место для смещения */}
       <div className="hidden xl:block  w-[286px] h-[176px]"></div>
       {/* Карточки */}

@@ -8,16 +8,19 @@ export const StudyWithUsCard: React.FC<CardProps> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col justify-between p-5 rounded-lg  ${
+      className={`relative flex flex-col justify-between p-5 rounded-lg  ${
         bgColor === 'dark'
-          ? 'bg-black text-[#FDFDFD]'
-          : 'bg-[#F3F2F7] text-[#1B1B1B]'
-      } w-[286px] h-[176px] `}
+          ? 'bg-black text-[#FDFDFD] hidden md:block'
+          : 'bg-[#e5e5e5] text-[#1B1B1B]'
+      } w-full md:w-[286px] md:h-[176px] `}
     >
-      {' '}
-      {icon && <div className="flex justify-end">{icon}</div>}
+      {icon && (
+        <div className="justify-end hidden md:flex absolute top-5 right-5">
+          {icon}
+        </div>
+      )}
       <div className="text-left h-full flex flex-col justify-end">
-        <p className="font-medium">{title}</p>
+        <p className="font-medium leading-5">{title}</p>
       </div>
     </div>
   );

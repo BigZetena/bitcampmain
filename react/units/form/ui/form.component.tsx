@@ -59,7 +59,10 @@ export const Form = () => {
   };
 
   return (
-    <div className="flex justify-between py-10 color-primary container max-w-container mx-auto font-raleway md:flex-row flex-col gap-5">
+    <div
+      id="form"
+      className="flex justify-between py-10 color-primary container max-w-container mx-auto font-raleway md:flex-row flex-col gap-5"
+    >
       <div className="md:w-1/2">
         <h2 className="text-3xl  md:text-5xl font-bold">
           Оптимизируем ваш

@@ -14,7 +14,7 @@ export const StackCard: React.FC<StackBlockProps> = ({
       {link && (
         <a
           href="#"
-          className="text-[#A089D5] font-bold mt-2 md:mt-0 text-base md:text-lg"
+          className="text-[#A089D5] relative font-bold mt-2 md:mt-0 text-base md:text-lg transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-[#A089D5] after:transition-all after:duration-300 hover:after:w-full"
         >
           {link}
         </a>
