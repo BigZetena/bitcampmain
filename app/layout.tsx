@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
-import { Header } from '@/react/sections/Header';
+import { Header } from '@/shared/ui/units/header/Header';
 import { Raleway, Manrope, JetBrains_Mono } from '@next/font/google';
-import { Footer } from '@/react/units/footer/ui/footer.component';
-
+import { Footer } from '@/shared/ui/units/footer/ui/footer.component';
+import Head from 'next/head';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -46,7 +46,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
- 
+      <Head>
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${raleway.variable} ${manrope.variable} ${jetBrains.variable} antialiased`}
       >
