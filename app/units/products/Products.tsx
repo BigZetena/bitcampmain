@@ -18,7 +18,7 @@ const cardsData = [
     description2:
       'Автоматизация и оптимизация бизнес-процессов под ваши цели и задачи',
     buttonText: 'Подробнее',
-    href: '/education',
+    href: '/education/adult',
   },
   {
     title: 'Наши проекты',

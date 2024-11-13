@@ -4,7 +4,7 @@ import { EducationCardsProps } from '../types';
 
 export const EducationList = ({ data }: { data: EducationCardsProps[] }) => {
   return (
-    <div className="flex gap-6 justify-between flex-wrap">
+    <div className="flex gap-11 xl:justify-between flex-wrap justify-center">
       {data.map((card, index) => (
         <EducationCard
           key={index}

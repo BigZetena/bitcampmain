@@ -4,31 +4,23 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/shared/ui/general/accordion.component';
-import { PartnerListProps } from '../type/parther-list-props.type';
+import { PartherCard } from './parther-card.component';
+import { PartnerCardProps } from '../type/parthner-card-props.type';
 
 export function PartherList({
-  coursesData,
+  coursesData, specials = false
 }: {
-  coursesData: PartnerListProps[];
+  coursesData: PartnerCardProps[], specials: boolean;
 }) {
   return (
     <Accordion type="single" collapsible className="w-full">
       {coursesData.map((course) => (
-        <AccordionItem key={course.id} value={course.id}>
-          <AccordionTrigger className="text-2xl">
+        <AccordionItem key={course.id} value={course.id + ''}>
+          <AccordionTrigger className="md:text-2xl border-b border-solid border-light pr-4 text-left">
             {course.title}
           </AccordionTrigger>
           <AccordionContent>
-            <div>
-              {course.description && <p>{course.description}</p>}
-
-              {course.targetAudience && (
-                <div className="mt-6 p-4 border-l-4 rounded-md">
-                  <h5 className="font-bold">Курс предназначен для:</h5>
-                  <p>{course.targetAudience}</p>
-                </div>
-              )}
-            </div>
+            <PartherCard course={course} specials={specials} />
           </AccordionContent>
         </AccordionItem>
       ))}

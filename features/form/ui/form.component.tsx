@@ -5,6 +5,7 @@ import { FormInput } from './form-input.component';
 import { FormButton } from './form-button.component';
 import { PatternFormat } from 'react-number-format';
 import { TitleDesc } from '@/shared/types/title-desc.type';
+import { FormTextArea } from './form-area.component';
 
 interface FormData {
   name: string;
@@ -13,7 +14,7 @@ interface FormData {
   company?: string;
 }
 
-export const Form = ({ title, description }: TitleDesc) => {
+export const Form = ({ title, description, company = '' }: TitleDesc) => {
   const [formRelise, setFormRelise] = useState('');
   const [isLoading, setIsLoading] = useState(false); // Состояние для спиннера и размытия
   const {
@@ -29,7 +30,7 @@ export const Form = ({ title, description }: TitleDesc) => {
       name: '',
       phone: '',
       email: '',
-      company: '',
+      company: company,
     },
   });
 
@@ -66,9 +67,7 @@ export const Form = ({ title, description }: TitleDesc) => {
     >
       <div className="md:w-1/2">
         <h2 className="text-3xl  md:text-5xl font-bold">{title}</h2>
-        <p className="text-xl mt-10">
-          {description}
-        </p>
+        <p className="text-xl mt-10">{description}</p>
       </div>
       <div className="md:w-1/2 relative">
         {/* Если идет загрузка, показываем спиннер */}
@@ -129,7 +128,7 @@ export const Form = ({ title, description }: TitleDesc) => {
             })}
             error={errors.email?.message}
           />
-          <FormInput label="Компания" {...register('company')} />
+          <FormTextArea label="Меня интересует" {...register('company')} />
           <FormButton type="submit" text="Оставить заявку" />
           <p className="text-xs">
             Нажимая на кнопку, я соглашаюсь на обработку персональных данных

@@ -13,7 +13,7 @@ export const DarkButton = ({
 }) => {
   return (
     <button
-      className={`py-5 px-10 rounded-md text-[#D6D6D6] font-raleway text-2xl ${
+      className={`md:py-5 md:px-10 p-2 rounded-md text-[#D6D6D6] font-raleway md:text-2xl ${
         dark ? 'bg-[#1b1b1b]' : 'bg-[#383838]'
       }`}
       onClick={onClick}

@@ -11,8 +11,8 @@ export const EducationCard = ({
   href = '',
 }: EducationCardsProps) => {
   return (
-    <Link href={href}>
-      <div className="w-[360px] h-[442px] rounded-xl text-white flex flex-col  transition-transform transform hover:scale-105 hover:shadow-2xl cursor-pointer overflow-hidden">
+    <Link href={href} className="flex-grow max-w-[360px] w-full">
+      <div className="  h-[442px]  rounded-xl text-white flex flex-col  transition-transform transform hover:scale-105 hover:shadow-2xl cursor-pointer overflow-hidden">
         <div
           className="py-10 px-6 font-raleway bg-center bg-cover h-full rounded-t-xl"
           style={{ backgroundImage: `url(${image})` }}

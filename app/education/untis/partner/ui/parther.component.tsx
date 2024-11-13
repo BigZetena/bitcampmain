@@ -1,35 +1,15 @@
 import { TitleLineCard } from '@/shared/ui/cards/title-line-card.component';
 import React from 'react';
 import { PartherList } from './parther-list.component';
+import { PartnerCardProps } from '../type/parthner-card-props.type';
 
-const coursesData = [
-  {
-    id: 'course-1',
-    title: "Конфигурирование и программирование в системе '1С:Предприятие 8'",
-    description: 'Описание курса или информация о содержании.',
-  },
-  {
-    id: 'course-2',
-    title:
-      "'1С:Бухгалтерия 8.3'. Практическое освоение бюджета с самого начала",
-    description: 'Подробная информация о курсе и его преимуществах.',
-  },
-  {
-    id: 'course-3',
-    title: 'Аналитик 1С: Зарплата и управление персоналом',
-    description: `
-      «Аналитик 1С: Зарплата и управление персоналом» — специалист для подготовки специалистов,
-      участвующих в проектах по внедрению программного продукта «1С: Зарплата и управление персоналом».
-    `,
-    targetAudience: `
-      Специалистов разного профиля, желающих приобрести одну из самых востребованных профессий в IT-сфере.
-      Курс будет полезен для бухгалтеров, расчетчиков заработной платы, специалистов по кадрам.
-    `,
-  },
-  // Добавьте дополнительные курсы, если нужно
-];
-
-export const Parther = () => {
+export const Parther = ({
+  coursesData,
+  specials = false,
+}: {
+  coursesData: PartnerCardProps[];
+  specials?: boolean;
+}) => {
   return (
     <div className="container max-w-container mx-auto py-10 font-raleway">
       <TitleLineCard
@@ -42,7 +22,7 @@ export const Parther = () => {
         description="Мы предлагаем качественное интерактивное обучение на базе учебного центра по программам и при поддержке наших партнеров"
       />
       <div>
-        <PartherList coursesData={coursesData} />
+        <PartherList coursesData={coursesData} specials={specials} />
       </div>
     </div>
   );
