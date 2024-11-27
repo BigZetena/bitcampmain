@@ -1,8 +1,9 @@
 import { blogCardsData } from '@/features/blog/lib/data/data';
+import { BlogCardData } from '@/features/blog/types/blog.type';
 import { BlogLineList } from '@/features/blog/ui/blog-line-list.component';
 import Image from 'next/image';
 
-export function BlogSidebar({ info }) {
+export function BlogSidebar({ info }:{ info: BlogCardData }) {
   const { date, author, authorImageUrl, tag } = info;
   return (
     <aside className="space-y-6 lg:w-[300px] shrink-0  grow ">

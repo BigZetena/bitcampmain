@@ -19,7 +19,7 @@ const BlogLayout = ({
         <div className="flex gap-5 relative lg:flex-row flex-col-reverse">
           {children}
 
-          <BlogSidebar info={sideData} />
+          {sideData && <BlogSidebar info={sideData} />}
         </div>
         <h1 className="text-3xl font-bold py-10 px-4">Ещё почитать</h1>
         <BlogLineList

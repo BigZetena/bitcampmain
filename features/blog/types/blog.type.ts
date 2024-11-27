@@ -5,7 +5,7 @@ export interface BlogCardData {
   imageUrl: string;
   author: string;
   id: string;
-  authorImageUrl?: string;
+  authorImageUrl: string;
 }
 
 export interface BlogImageProps {
