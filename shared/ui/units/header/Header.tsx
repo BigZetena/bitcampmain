@@ -3,7 +3,7 @@ import { Navigation } from '../../navigation/Navigation';
 const navItems = [
   { label: 'разработка', href: '/' },
   { label: 'обучение', href: '/education/adult' },
-  { label: 'исследования', href: '/' },
+  { label: 'блог', href: '/blog' },
   { label: 'о нас', href: '/' },
   { label: 'контакты', href: '/' },
 ];

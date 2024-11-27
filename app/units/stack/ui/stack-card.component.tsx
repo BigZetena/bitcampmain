@@ -6,6 +6,7 @@ export const StackCard: React.FC<StackBlockProps> = ({
   title,
   link,
   categories,
+  href
 }) => (
   <div className="font-raleway pt-8 pb-12 relative">
     <div className="absolute top-0 left-0 right-0 h-[2px] bg-primary w-full"></div>
@@ -13,7 +14,7 @@ export const StackCard: React.FC<StackBlockProps> = ({
       <h3 className="font-medium text-2xl md:text-3xl text-primary">{title}</h3>
       {link && (
         <a
-          href="#"
+          href={href}
           className="text-[#A089D5] relative font-bold mt-2 md:mt-0 text-base md:text-lg transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-[#A089D5] after:transition-all after:duration-300 hover:after:w-full"
         >
           {link}

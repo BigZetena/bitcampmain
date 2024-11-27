@@ -11,7 +11,7 @@ export const Parther = ({
   specials?: boolean;
 }) => {
   return (
-    <div className="container max-w-container mx-auto py-10 font-raleway">
+    <div id="partner" className="container max-w-container mx-auto py-10 font-raleway">
       <TitleLineCard
         title={
           <>

@@ -50,7 +50,7 @@ const educationProCardsData: EducationCardsProps[] = [
   },
   {
     duration: 'от 12 месяцев',
-    title: 'Backend-разработка',
+    title: 'Microsoft Excel (BI)',
     price: '29 000 ₽/мес',
     credit: 'в рассрочку на 36 месяцев',
     image: '/images/education-cards/backend.png', // Замените на реальный путь к изображению

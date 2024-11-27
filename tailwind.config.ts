@@ -32,6 +32,8 @@ const config: Config = {
         light: 'var(--light)',
         centerLight: 'var(--centerLight)',
         darkCard: 'var(--darkCard)',
+        import: 'var(--import)',
+        darkBackground:'var(--darkBackground)'
       },
       fontFamily: {
         raleway: ['var(--font-raleway)', 'sans-serif'],

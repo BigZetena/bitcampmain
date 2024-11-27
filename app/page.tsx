@@ -8,8 +8,9 @@ import { StudyWithUs } from '@/features/study/ui/study-with-us/ui/study-with-us.
 import { CorpProgramm } from '@/features/study/ui/corp-programm/ui/corp-programm.component';
 import { StudyPersonal } from '@/features/study/ui/study-personal/ui/study-personal.component';
 import { Sciense } from '@/app/units/sciense/ui/sciense.component';
-import { BlogLine } from '@/app/units/blog/ui/blog-line.component';
+import { BlogLine } from '@/features/blog/ui/blog-line.component';
 import { Form } from '@/features/form/ui/form.component';
+import { blogCardsData } from '@/features/blog/lib/data/data';
 
 export default function Home() {
   return (
@@ -38,7 +39,7 @@ export default function Home() {
       <StudyWithUs />
       <CorpProgramm />
       <StudyPersonal />
-      <BlogLine />
+      <BlogLine blogCardsData={blogCardsData.slice(0,3)} />
       <Sciense />
       <Form
         title={

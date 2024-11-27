@@ -46,6 +46,7 @@ export const Navigation = ({ navLinks }: Props) => {
           {navLinks.map((link) => (
             <li key={link.label} className="flex items-center">
               <Link
+                scroll={false}
                 href={link.href}
                 className="relative text-[#FDFDFD] font-raleway text-[15px] font-bold leading-[17.61px] tracking-[-0.02em] text-center transition-colors duration-300 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-[#FDFDFD] after:transition-all after:duration-300 hover:after:w-full"
               >

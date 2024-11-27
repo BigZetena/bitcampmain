@@ -36,7 +36,7 @@ const categoriesData: CategoryData[] = [
   {
     id: 2,
     title: 'Импортозамещение',
-    color: '#24305E',
+    color: 'var(--import)',
     services: [
       {
         title: 'Перенос ИТ-решений на российские СУБД',
@@ -106,7 +106,7 @@ export const Services: React.FC = () => {
   );
 
   return (
-    <div className="container max-w-container py-10 font-raleway">
+    <div className="container max-w-container pt-10 font-raleway" id="services">
       <div className="flex flex-col md:flex-row justify-between gap-2 md:gap-8">
         <div className="w-full md:w-[213px] md:shrink-0">
           <SubTitle>Услуги</SubTitle>

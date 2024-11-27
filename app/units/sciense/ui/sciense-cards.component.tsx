@@ -2,7 +2,7 @@ import React from 'react';
 
 export const ScienseCards = () => {
   return (
-    <section className="container max-w-container md:py-10 text-[#FDFDFD] font-raleway ">
+    <section className=" max-w-container md:py-10 text-[#FDFDFD] font-raleway ">
       {/* Flex-контейнер */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0 md:space-x-8 md:h-[400px]">
         {/* Левый блок */}

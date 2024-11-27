@@ -6,6 +6,7 @@ const stackSections: StackSectionType[] = [
     id: 1,
     title: 'Frontend',
     link: '[обучаем]',
+    href: '/frontend',
     categories: [
       {
         name: 'Фреймворки, Инструменты:',
@@ -32,7 +33,7 @@ const stackSections: StackSectionType[] = [
   {
     id: 2,
     title: 'Backend',
-    link: '[обучаем]',
+    // link: '[обучаем]',
     categories: [
       {
         name: 'Базы данных:',
@@ -77,6 +78,7 @@ export const StackSection = () => {
           title={section.title}
           link={section.link}
           categories={section.categories}
+          href={section.href}
         />
       ))}
       <div className="md:hidden absolute bottom-0 left-0 right-0 h-[2px] bg-primary w-full"></div>
