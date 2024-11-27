@@ -4,7 +4,7 @@ import React from 'react';
 
 export const AddBlogCard = () => {
   return (
-    <div className="bg-black text-white p-10 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
+    <div className="bg-[#1b1b1b] text-white p-10 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6">
       {/* Левая часть */}
       <div className="flex flex-col shrink-0 gap-4">
         <Image
