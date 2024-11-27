@@ -17,7 +17,7 @@ export const blogCardsData: BlogCardData[] = [
     title:
       'Текущие тренды и перспективы роста ИТ-рынка в России: роль искусственного интеллекта и облачных решений',
     tag: 'Аналитика',
-    imageUrl: '/images/blog/perspective-it/1.jpg',
+    imageUrl: '/images/blog/perspective-it/1.jpeg',
     author: 'BitCamp',
     authorImageUrl: '/images/blog/authors/bitcamp.jpg',
   },
@@ -27,7 +27,7 @@ export const blogCardsData: BlogCardData[] = [
     title:
       'Применение нейросетей для автоматизации и оптимизации процессов в отраслях промышленности',
     tag: 'Нейросети',
-    imageUrl: '/images/blog/neural-networks/1.jpg',
+    imageUrl: '/images/blog/neural-networks/1.jpeg',
     author: 'BitCamp',
     authorImageUrl: '/images/blog/authors/bitcamp.jpg',
   },

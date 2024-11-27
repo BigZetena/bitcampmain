@@ -29,7 +29,7 @@ export const blogPageData = [
       },
       {
         type: 'image',
-        src: '/images/blog/perspective-it/1.jpg',
+        src: '/images/blog/perspective-it/1.jpeg',
         alt: 'Город в информационной сети',
       },
       {
@@ -66,12 +66,12 @@ export const blogPageData = [
       },
       {
         type: 'image',
-        src: '/images/blog/perspective-it/2.jpg',
+        src: '/images/blog/perspective-it/2.jpeg',
         alt: 'Картинка сгенерированная нейронной сетью',
       },
       {
         type: 'image',
-        src: '/images/blog/perspective-it/3.jpg',
+        src: '/images/blog/perspective-it/3.jpeg',
         alt: 'Картинка сгенерированная нейронной сетью',
       },
       {
@@ -108,12 +108,12 @@ export const blogPageData = [
       },
       {
         type: 'image',
-        src: '/images/blog/perspective-it/4.jpg',
+        src: '/images/blog/perspective-it/4.jpeg',
         alt: 'Картинка сгенерированная нейронной сетью',
       },
       {
         type: 'image',
-        src: '/images/blog/perspective-it/5.jpg',
+        src: '/images/blog/perspective-it/5.jpeg',
         alt: 'Картинка сгенерированная нейронной сетью',
       },
       {
