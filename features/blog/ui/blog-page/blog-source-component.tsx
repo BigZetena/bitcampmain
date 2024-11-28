@@ -15,7 +15,7 @@ export const BlogSourcesList: React.FC<SourcesListProps> = ({ sources }) => {
               href={source.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:text-blue-700 underline"
+              className="text-blue-500 hover:text-blue-700 underline break-all"
             >
               {source.url}
             </a>
