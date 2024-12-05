@@ -2,7 +2,7 @@ import React from 'react';
 
 export const BlogVideo = ({ videoId }: { videoId: string }) => {
   return (
-    <div className="w-full h-full mb-4">
+    <div className="w-full h-full mb-8">
       <div className="relative pt-[56.25%]">
         {' '}
         {/* Соотношение сторон 16:9 */}

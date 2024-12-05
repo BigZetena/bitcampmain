@@ -5,7 +5,7 @@ export const blogCardsData: BlogCardData[] = [
     id: 'podcast_s_Alexandroy_Yakubovich',
     date: '02.10.2024',
     title:
-      'Подкаст с бизнес экспертом Александрой Якубович о стартапах в России',
+      'Подкаст с Александрой Якубович "Лидерство и управление в стартапах"',
     tag: 'Менеджмент',
     imageUrl: '/images/blog/podcust.png',
     author: 'BitCamp',
